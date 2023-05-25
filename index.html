@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>2の累乗ジェネレーター</title>
+</head>
+<body>
+<input type="number" id="num">
+<input type="button" value="送信" onclick="showPowerOfTwo()">
+<div id="power-of-two"></div>
+
+<script>
+function showPowerOfTwo() {
+  var num = document.getElementById("num").value;
+  var powersOfTwo = [];
+  for (var i = 0; i < num; i++) {
+    powersOfTwo.push(2 ** i);
+  }
+  document.getElementById("power-of-two").innerHTML = powersOfTwo.join(", ");
+}
+</script>
+</body>
+</html>
